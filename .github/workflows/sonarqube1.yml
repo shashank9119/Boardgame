@@ -37,6 +37,6 @@ jobs:
         id: sonarqube-quality-gate-check  # Fixed indentation
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
-        with:
+        env:
           sonar-host-url: ${{ secrets.SONAR_HOST_URL }}
           sonar-token: ${{ secrets.SONAR_TOKEN }}
